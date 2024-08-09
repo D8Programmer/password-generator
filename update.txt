@@ -1,6 +1,0 @@
-git init
-git add .
-git commit -m "Initial Commit"
-git branch -M master  # or 'main', depending on your setup
-git remote add origin https://github.com/D8Programmer/password-generator.git
-git push -u origin master  # or 'main', depending on your setup
