@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="pass-form">
+            <h1>Password Generator</h1>
+            <div class="password-section">
+                <input type="text" id="password" readonly>
+                <button id="copy-btn" title="Copy to Clipboard">
+                    <svg id="clipboard-icon" clip-rule="evenodd" width="23px" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m6 19v2c0 .621.52 1 1 1h2v-1.5h-1.5v-1.5zm7.5 3h-3.5v-1.5h3.5zm4.5 0h-3.5v-1.5h3.5zm4-3h-1.5v1.5h-1.5v1.5h2c.478 0 1-.379 1-1zm-1.5-1v-3.363h1.5v3.363zm0-4.363v-3.637h1.5v3.637zm-13-3.637v3.637h-1.5v-3.637zm11.5-4v1.5h1.5v1.5h1.5v-2c0-.478-.379-1-1-1zm-10 0h-2c-.62 0-1 .519-1 1v2h1.5v-1.5h1.5zm4.5 1.5h-3.5v-1.5h3.5zm3-1.5v-2.5h-13v13h2.5v-1.863h1.5v3.363h-4.5c-.48 0-1-.379-1-1v-14c0-.481.38-1 1-1h14c.621 0 1 .522 1 1v4.5h-3.5v-1.5z" fill-rule="nonzero"/></svg>
+                </button>
+            </div>
+            <div class="user-actions">
+                <div class="options">
+                    <label for="length">Password Length</label>
+                    <input type="number" id="length" min="4" max="20" value="8">
+                </div>
+                <div class="options">
+                    <label><input type="checkbox" id="uppercase" checked> Uppercase Letters</label>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox" id="lowercase" checked> Lowercase Letters</label>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox" id="numbers" checked> Numbers</label>
+                </div>
+                <div class="options">
+                    <label><input type="checkbox" id="symbols" checked> Symbols</label>
+                </div>
+            </div>
+            <button id="generate-btn">Generate Password</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
